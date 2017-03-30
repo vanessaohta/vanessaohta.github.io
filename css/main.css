@@ -12,4 +12,179 @@ img {
   max-width: 100%;
 }
 
+html, body {
+	height: 100%;
+}
+/* ----------------------------------------
+Typography
+------------------------------------------- */
+body {
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	letter-spacing: .02em;
+	margin: 0;
+	color: #1A1A1A;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #1A1A1A;
+	font-weight: 600;
+	transition: all .3s ease-in-out;
+}
+
+a:hover {
+	color: #44545E;
+}
+
+h1 {
+	color: black;
+}
+
+h2 {
+	color: black;
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+/* ----------------------------------------
+Layout
+------------------------------------------- */
+.flexwrap {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	height: 95vh;
+	overflow-y: hidden;
+}
+
+.column:nth-of-type(1) {
+	width: 60%;
+	display: inline-block;
+	position: relative;
+	height: 95vh;
+	overflow-y: scroll;
+}
+
+.column:nth-of-type(2) {
+	width: 28%;
+	display: inline-block;
+	height: 95vh;
+	overflow-y: scroll;
+	position: relative;
+}
+
+/* ----------------------------------------
+Header
+------------------------------------------- */
+header {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url('../images/dessert_after_header.JPG');
+	opacity: 0.8;
+	background-attachment: fixed;
+	height: 90vh;
+	margin-top: 0;
+	overflow: hidden;
+}
+
+.headline {
+	margin: 0;
+	position: absolute;
+	top:400px;
+	left: 800px;
+}
+
+.strikeout {
+	text-decoration: line-through;
+}
+
+nav {
+	align-items: center;
+ 	justify-content: center;
+ 	background-color: #e3ecf7;
+ 	width: 100%;
+}
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav li {
+	display: inline-block;
+	padding: 10px 60px;
+}
+
+ul a {
+	text-transform: uppercase;
+	letter-spacing: .02em;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.sticky {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 100;
+	opacity: 1;
+}
+
+/* ----------------------------------------
+Buttons
+------------------------------------------- */
+
+/* ----------------------------------------
+Articles
+------------------------------------------- */
+.beforeandafter_wrapper img {
+	max-width: 700px;
+}
+
+.beforeafter_wrapper {
+	width: 600px;
+	margin: 20px auto;
+	overflow: hidden;
+	position: relative;
+}
+
+.before {
+	position: absolute;
+	width: 600px;
+	top: 0;
+	left: -600px;
+	transition: all 1s ease-in-out;
+}
+
+.beforeafter_wrapper:hover .before {
+	transform: translateX(600px);
+}
+
+/*h3 {
+	position: absolute;
+	top: 0;
+}*/
+/* ----------------------------------------
+About
+------------------------------------------- */
+
+/* ----------------------------------------
+Footer
+------------------------------------------- */
+
+/* ----------------------------------------
+Place your media queries here!
+------------------------------------------- */
 

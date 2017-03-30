@@ -3,18 +3,70 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
+        <title>Clean Plate Club</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
+        <link href="https://fonts.googleapis.com/css?family=Poppins:400,600|Roboto" rel="stylesheet">
+
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-        <!-- Add your site content here. Keep it pretty and use indentation :) -->
+       <header>
+          <div class="headline">
+             <h1>Clean Plate Club</h1>
+             <h2>a <span class="strikeout">food</span> blog</h2>
+           </div>
+       </header>
+       <nav>
+           <ul>
+               <li><a href="#about">About</a></li>
+               <li><a href="#beforeAndAfter">Before &amp; After</a></li>
+               <li><a href="#gonetoofast">Gone Too Fast</a></li>
+           </ul>
+       </nav>
+       <div class="flexwrap">
+            <div class="column">
+              <h3 id="beforeAndAfter">Before &amp; After</h3>
+                <article class="beforeafter_wrapper">
+                    <img src="images/verve_after.JPG" alt="verve after">
+                    <img src="images/verve_before.JPG" alt="verve before" class="before">
+                   <h4>Verve Coffee</h4>
+                   <p>Lorem ipsum dolor sit amet.</p>
+               </article>
+               <article class="beforeafter_wrapper">
+                    <img src="images/dessert_after.JPG" alt="dessert after">
+                    <img src="images/dessert_before.JPG" alt="verve before" class="before">
+                   <h4>Dessert at Foreign Cinema</h4>
+                   <p>Lorem ipsum dolor sit amet.</p>
+               </article>
+               <article class="beforeafter_wrapper">
+                    <img src="images/carpaccio_after.JPG" alt="carpaccio after">
+                    <img src="images/carpaccio_before.JPG" alt="carpaccio before" class="before">
+                   <h4>Carpaccio at Foreign Cinema</h4>
+                   <p>Lorem ipsum dolor sit amet.</p>
+               </article>
+            </div>
+           <div class="column">
+              <h3 id="gonetoofast">Gone Too Fast</h3>    
+               <article>
+                    <img src="images/empty1.JPG" alt="empty1">
+                   <h5>Title 2</h5>
+               </article>
+               <article>
+                    <img src="images/empty2.JPG" alt="empty1">
+                   <h5>Title 2</h5>
+               </article>
+                <article>
+                   <img src="images/empty3.JPG" alt="empty1">
+                   <h5>Title 2</h5>
+               </article>
+            </div>
+       </div>
 
 
         <script src="js/vendor/jquery-1.12.0.min.js"></script>
