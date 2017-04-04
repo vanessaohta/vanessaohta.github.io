@@ -69,19 +69,25 @@ Layout
 }
 
 .column:nth-of-type(1) {
-	width: 60%;
+	width: 72%;
 	display: inline-block;
 	position: relative;
 	height: 95vh;
 	overflow-y: scroll;
+
 }
 
 .column:nth-of-type(2) {
-	width: 28%;
+	width: 27%;
 	display: inline-block;
 	height: 95vh;
 	overflow-y: scroll;
 	position: relative;
+	margin-right: 30px;
+	padding-left: 30px; 
+	border-left: 2px solid #1A1A1A;
+
+
 }
 
 /* ----------------------------------------
@@ -91,7 +97,7 @@ header {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-image: url('../images/dessert_after_header.JPG');
-	opacity: 0.8;
+	opacity: 1;
 	background-attachment: fixed;
 	height: 90vh;
 	margin-top: 0;
@@ -109,11 +115,13 @@ header {
 	text-decoration: line-through;
 }
 
-nav {
+nav, footer {
 	align-items: center;
  	justify-content: center;
- 	background-color: #e3ecf7;
+ 	background-color: #ffffff;
  	width: 100%;
+ 	border-top: 2px solid #1A1A1A;
+ 	border-bottom: 2px solid #1A1A1A;
 }
 nav ul {
 	list-style: none;
@@ -154,24 +162,54 @@ Articles
 }
 
 .beforeafter_wrapper {
-	width: 600px;
+	width: 500px;
 	margin: 20px auto;
 	overflow: hidden;
 	position: relative;
+	border: 1px solid #1A1A1A;
+	height: 550px;
+	z-index: 1;
+	margin-bottom: 80px;
+}
+
+h4 {
+	width: 100%;
+	padding: 10px 0px;
+	position: absolute;
+	top: 500px;
+	margin: 0px;
 }
 
 .before {
 	position: absolute;
-	width: 600px;
+	width: 500px;
+	height: 500px;
 	top: 0;
-	left: -600px;
+	left: 0;
 	transition: all 1s ease-in-out;
+	z-index: 2;
 }
+.after {
+	position: absolute;
+	width: 500px;
+	height: 500px;
+	top: 0;
+	left: 0;
+	/*z-index: 1;*/
+}
+
 
 .beforeafter_wrapper:hover .before {
-	transform: translateX(600px);
+	transform: translateX(-600px);
 }
 
+.column:nth-of-type(2) img {
+	border-radius: 50%;
+}
+
+.column:nth-of-type(2) article:hover {
+	opacity: 0.8;
+}
 /*h3 {
 	position: absolute;
 	top: 0;
@@ -183,6 +221,13 @@ About
 /* ----------------------------------------
 Footer
 ------------------------------------------- */
+
+/*also edited in nav/ footer */
+footer {
+	/*background-color: #e3ecf7;
+ 	width: 100%;*/
+	border-top: 2px solid #1A1A1A;
+}
 
 /* ----------------------------------------
 Place your media queries here!

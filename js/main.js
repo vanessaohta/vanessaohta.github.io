@@ -5,13 +5,13 @@
 		// Make nav fixed
 	// else 
 		// Make nav static
-var element_position = $('nav').offset().top;
-console.log(element_position);
+var nav_position = $('nav').offset().top;
+console.log(nav_position);
 
 $(window).on('scroll', function(event) {
 	event.preventDefault;
     var y_scroll_pos = window.pageYOffset;
-    var scroll_pos_test = element_position;
+    var scroll_pos_test = nav_position;
 
     if(y_scroll_pos > scroll_pos_test) {
         $('nav').addClass('sticky');
@@ -19,6 +19,7 @@ $(window).on('scroll', function(event) {
     	$('nav').removeClass('sticky');
     }
 });
+
 
 //notes and resources for slider: 
 	//http://www.catchmyfame.com/2009/06/25/jquery-beforeafter-plugin/
