@@ -20,6 +20,14 @@ $(window).on('scroll', function(event) {
     }
 });
 
+$('#aboutanchor').on('click', function (event) {
+    // Type code related to event here! :)
+    event.preventDefault;
+    $('.about')
+});
 
 //notes and resources for slider: 
 	//http://www.catchmyfame.com/2009/06/25/jquery-beforeafter-plugin/
+
+
+    // $('').css('overflow', 'scroll')

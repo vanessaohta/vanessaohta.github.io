@@ -225,7 +225,8 @@ h4 {
 	top: 0;
 	left: 0;
 	opacity: 0;
-	padding: 100px;
+	max-width: 350px;
+	padding: 150px;
 }
 .column:nth-of-type(2) article:hover img{
 	opacity: 0.5;
